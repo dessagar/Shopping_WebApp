@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="productUi.css">
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+        <a class="navbar-brand" href="#">Shopping Application</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item active pl-2">
+                    <a class="nav-link" href="productUi.html">Shop</a>
+                </li>
+
+                <li class="nav-item active pl-2">
+                    <a class="nav-link" href="history.html">view History</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right ">
+            <li><a class="nav-link active" href="home.html"><span class="glyphicon glyphicon-off"></span> Log Out</a></li>
+            </ul>
+        </div>
+    </nav>
+<div class="signup-form">
+    <form action="productController">
+		<h3>Product Details</h3>
+		<p class="hint-text">Enter Product Details </p>
+        <div class="form-group">
+			<div class="row">
+				<div class="col"><input type="text" class="form-control" name="prodId" placeholder="Product ID" required="required"></div>
+			</div>        	
+        </div>
+        <div class="form-group">
+        	<input type="text" class="form-control" name="prodName" placeholder="Product Name" required="required">
+        </div>
+		<div class="form-group">
+            <input type="text" class="form-control" name="prodPrice" placeholder="Product Price" required="required">
+        </div>
+		<div class="form-group">
+            <input type="text" class="form-control" name="prodQty" placeholder="Product Quantity" required="required">
+        </div>        
+        <!-- <div class="form-group">
+			<label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+		</div> -->
+		<div class="form-group">
+            <button type="submit" class="btn btn-success btn-lg btn-block">Add To Cart</button>
+        </div>
+    </form>
+	<!-- <div class="text-center">Already have an account? <a href="#">Sign in</a></div> -->
+</div>
+</body>
+</html>
